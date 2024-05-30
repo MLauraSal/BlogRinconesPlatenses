@@ -37,7 +37,7 @@
 .header .navbar {
     display: flex;
     width: 100%;
-    justify-content: center
+    justify-content: center;
    
    
 
@@ -70,10 +70,11 @@
 
 .home {
     border: 1px solid;
+  
     display: flex;
     justify-content: center;
     width: 100%;
-    min-height: 500px;
+    min-height: 600px;
     align-items: center;
     background: url(/assets/images/experiencia_gastronomica.jpg) no-repeat;
     backdrop-filter: ;
