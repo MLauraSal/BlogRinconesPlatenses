@@ -28,9 +28,9 @@ img{
 }
 
 /* header */
-header{
+.home-header{
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/ciudad-vista-aerea-noche-estadio-unico-1024x680.jpg) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/images/ciudad-vista-aerea-noche-estadio-unico-1024x680.jpg) center/cover no-repeat fixed;
     display: flex;
     flex-direction: column;
     justify-content: stretch;

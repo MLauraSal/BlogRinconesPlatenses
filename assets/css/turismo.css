@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #141514;
+    --exDark: #485843;
+    --text-color: #ffffff;
+}
+
+/*-----------------------------------*\
+  #SECTION HEADER
+\*-----------------------------------*/
+.header {
+
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background: var(--exDark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+/*-----------------------------------*\
+  #SECTION NAVBAR
+\*-----------------------------------*/
+
+
+.header .navbar {
+    display: flex;
+    width: 100%;
+    justify-content: center
+   
+   
+
+}
+
+.header .navbar a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0 2rem;
+    transition: all .5s ease-in out;
+
+}
+
+.header .navbar a:hover {
+    color: var(--dark);
+    
+}
+
+.navbar-brand{
+   display: block;
+   width: 70px;
+   margin-left: 1rem;
+    
+}
+/*-----------------------------------*\
+  #SECTION HOME
+\*-----------------------------------*/
+
+.home {
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 500px;
+    align-items: center;
+    background: url(/assets/images/experiencia_gastronomica.jpg) no-repeat;
+    backdrop-filter: ;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    
+    text-align: center;
+    width: 80rem;
+    
+}
+
+.content h3 {
+    color: var(--text-color);
+    font-size: 5rem;
+    font-weight: bold;
+    backdrop-filter: blur(1px);
+}
+
+.content p {
+    color: #dbf3db;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    backdrop-filter: blur(1px);
+}
