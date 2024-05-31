@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-:root{
+/* Estilos para el formulario de contacto */
+:root {
     --Playfair: 'Playfair Display', serif;
     --Quicksand: 'Quicksand', sans-serif;
     --Roboto: 'Roboto', sans-serif;
     --dark: #1c1b1d;
     --exDark: #485843;
+
     --white: #ffffff;
+
     --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.1);
 }
-/* header */
+
+
 /* header */
 .header {
     position: fixed;
@@ -60,131 +64,16 @@
 .header.navbar a:hover {
     opacity: 0.7;
 }
-/*-----------------------------------*\
-  #SECTION HOME
-\*-----------------------------------*/
 
-.home {
-    border: 1px solid;
-    display: flex;
-    justify-content: center;
+
+.contact {
+    position: relative;
     width: 100%;
-    min-height: 650px;
-    align-items: center;
-    background: url(/assets/images/experiencia_gastronomica.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.home .content {
-    
-    text-align: center;
-    width: 80rem;
-    
-}
-
-.content h1 {
-    color: var(--white);
-    font-size: 4rem;
-    font-family: var(--Playfair);
-    line-height: 1.2;
-    backdrop-filter: blur(1px);
-}
-
-.content p {
-    color: var(--white);
-    font-size: 2rem;
-    padding: 1rem 0;
-}
-
-/* Categories */
-.categories {
-    padding: 4.5rem 0;
-    
-}
-
-.heading {
-    text-align: center;
-    
-    padding-bottom: 3rem;
-    font-size: 4rem;
-    color: var(--exDark);
-}
-
-.categories-container {
+    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-    align-items: center;
-    text-align: center;
-    gap: 3rem;
+    place-items: center;
 }
 
-.row-img {
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.1);;
-}
-
-.row-img img {
-    
-    width: 200%;
-    display: block;
-    transition: transform 0.7s;
-}
-
-.row-img img:hover {
-    transform: scale(1.2);
-}
-
-.row a {
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all .50s ease;
-}
-
-.row a:hover {
-    color: var(--exDark);
-    text-transform: uppercase;
-}
-
-/* Sites */
-
-.site {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 5rem;
-    margin-bottom: 30px;
-    padding: 2rem;
-}
-.site-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-
-}
-
-.site-text h5 {
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--dark);
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    margin-bottom: 20px;
-}
-
-.site-text p {
-    font-size: 15px;
-    font-weight: 500;
-}
-/* Media Queries */
 @media screen and (max-width: 540px) {
 
     .header .navbar {
@@ -242,5 +131,3 @@
 
 
 }
-
-
