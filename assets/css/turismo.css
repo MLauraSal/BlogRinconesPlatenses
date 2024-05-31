@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #1c1b1d;
+    --exDark: #485843;
+    --green: #4566d1;
+    --white: #ffffff;
+}
+/* header */
+header{
+    min-height: 100vh;
+    background:  url(/assets/images/experiencia_gastronomica.jpg) center/cover no-repeat ;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--exDark);
+    padding: 1rem 0;
+    z-index: 999;
+}
+.navbar-brand{
+    display: block;
+    margin-left: 1rem;
+    width: 100px;
+    
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+}
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-title{
+    font-size: rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+    backdrop-filter: blur(1px);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 3px;
+}
+
+/* Categories */
+.categories {
+    padding: 4.5rem 0;
+    
+}
+
+.heading {
+    text-align: center;
+    
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    color: var(--exDark);
+}
+
+.categories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+.row-img {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.1);;
+}
+
+.row-img img {
+    
+    width: 200%;
+    display: block;
+    transition: transform 0.7s;
+}
+
+.row-img img:hover {
+    transform: scale(1.2);
+}
+
+.row a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .50s ease;
+}
+
+.row a:hover {
+    color: var(--exDark);
+    text-transform: uppercase;
+}
+
+/* Sites */
+
+.sites {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 9rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+       
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+
+    .navbar-brand a {
+        width:20px;
+        
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+   
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+   
+}
+
+
