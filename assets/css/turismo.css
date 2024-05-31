@@ -9,8 +9,29 @@
     --white: #ffffff;
     --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.1);
 }
-/* header */
-/* header */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+    background: #eee ;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+/*-----------------------------------*\
+  #SECTION HEADER
+\*-----------------------------------*/
 .header {
     position: fixed;
     width: 100%;
@@ -27,6 +48,8 @@
     box-shadow: var(--box-shadow);
 }
 
+
+
 .header .navbar {
     display: flex;
     justify-content: flex-end;
@@ -37,7 +60,8 @@
 
 }
 
-.header .navbar a {
+
+.header .navbar-content a {
     text-transform: uppercase;
     font-family: var(--Roboto);
     letter-spacing: 1px;
@@ -50,16 +74,19 @@
     transition: opacity 0.5s ease;
 
 }
-
+.header .navbar-content a:hover {
+    opacity: 0.7;
+}
 .header .navbar-brand {
     display: block;
     width: 150px;
+  
 }
+ .header .navbar-brand img {
+    border-radius: 50%;
+ }
 
 
-.header .navbar a:hover {
-    opacity: 0.7;
-}
 /*-----------------------------------*\
   #SECTION HOME
 \*-----------------------------------*/
@@ -97,7 +124,9 @@
     padding: 1rem 0;
 }
 
-/* Categories */
+/*-----------------------------------*\
+  #SECTION CATEGORIES
+\*-----------------------------------*/
 .categories {
     padding: 4.5rem 0;
     
@@ -155,7 +184,9 @@
     text-transform: uppercase;
 }
 
-/* Sites */
+/*-----------------------------------*\
+  #SECTION SITES
+\*-----------------------------------*/
 
 .site {
     display: grid;
@@ -165,9 +196,12 @@
     margin-bottom: 30px;
     padding: 2rem;
 }
+
+
 .site-img img {
     width: 100%;
     height: 100%;
+   
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     transition: 0.2s ease-in-out;
@@ -191,10 +225,52 @@
     font-size: 15px;
     font-weight: 500;
 }
-/* Media Queries */
-@media screen and (max-width: 540px) {
+/*-----------------------------------*\
+  #SECTION FOOTER
+\*-----------------------------------*/
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
 
-    .header .navbar {
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+@media screen and (max-width: 768px) {
+
+    .header .navbar-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 2rem;
@@ -205,14 +281,12 @@
 
     
 
-    .navbar a {
-        
-        padding-right: 1.2rem;
-        padding-left: 1.2rem;
+
+    .header .navbar-brand {
+        display: block;
+        width: 150px;
+      
     }
-
-
-    
 
     .heading {
 
@@ -235,7 +309,7 @@
         padding: 2rem;
     }
 
-    .
+    
 }
 
 @media screen and (min-width: 768px) {
