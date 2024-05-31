@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
-
 :root{
     --Playfair: 'Playfair Display', serif;
     --Quicksand: 'Quicksand', sans-serif;
     --Roboto: 'Roboto', sans-serif;
-    --dark: #3c393d;
+    --dark: #1c1b1d;
     --exDark: #485843;
+    
+    --white: #ffffff;
 }
 *{
     padding: 0;

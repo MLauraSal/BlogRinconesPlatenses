@@ -25,70 +25,61 @@
 
 </head>
 <body>
-    
-   <main>
-    <div class="container- form">
-       <div class="info-form">
-           <h2>contactanos</h2>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptatem cupiditate eaque corrupti, voluptatum reprehenderit ratione nostrum cumque magnam, animi minus adipisci vel omnis! Autem animi inventore esse officiis quaerat.</p>
-           <a href="#"> <i  class="fa  fa-phone">
-           </i>1124786753</a>
-           <a href="#">  <i  class=" fa fa-envelope">
-           </i>rinconesplatneses@tudominio,com</a>
-           <a  href="#"><i class="fa fa-map-marked">
-           </i> Ciudad, Pais</a>
-        </div>
-        <form  action="#"  autocomplete="off">
-        <input type="text"  name="nombre"
-         placeholder="Ingresa tu nombre"
-         class="campo">
-         <input  type="email"   name="email"
-         placeholder="Ingresa tu correo"
-         class="campo">
-         <textarea  name="mensaje"
-         placeholder="ingresa tu mensaje"></textarea>
-        <input  type="submit" name="enviar"
-        value="enviar mensaje"  class="btn-enviar">
-        </form>
-    
-      </div>
-     </main>
-      <body>
-    
-        <!-- header -->
-        <header>
-          <nav class = "navbar">
-            <div class = "container">
-              <a href = "./index.html" class = "navbar-brand">
-                <!-- no olviden llenar la descripcion de la imagen en el atributo alt -->
-                <img src="/images/logo.png" alt="">
-              </a>
-              <div class = "navbar-nav">
-                <!-- completen las rutas para que los enlaces funcionen -->
-                <a href = "./index.html">Home</a>
-                <a href = "">Turismo</a>
-                <a href = "">Cultura</a>
-                <a href = "./contact.html">Contacto</a>
-              </div>
-            </div>
-          </nav>
-          <div class = "banner">
-            <div class = "container">
-              <h1 class = "banner-title">
-                <span>Cultura</span> y Turismo Blog
-              </h1>
-              <p>Todo lo que necesitas saber de esta hermosa ciudad</p>
-              <form>
-                <input type = "text" class = "search-input" placeholder="Search . . .">
-                <button type = "submit" class = "search-btn">
-                  <i class = "fas fa-search"></i>
-                </button>
-              </form>
-            </div>
+     <!-- header -->
+     <header class="home_header">
+      <nav class = "navbar">
+        <div class = "container">
+          <a href = "index.html" class = "navbar-brand"><img src="/assets/images/logo.png" alt=""></a>
+          <div class = "navbar-nav">
+            <a href = "./home.html">Home</a>
+            <a href = "./assets/pages/turismo.html">Turismo</a>
+            <a href = "./assets/pages/cultura.html">Cultura</a>
+            <a href = "./assets/pages/contact.html">Contacto</a>
           </div>
-        </header>
-        <!-- end of header -->
-        
+        </div>
+      </nav>
+      <div class = "banner">
+        <div class = "container">
+          <h1 class = "banner-title">
+            <span>Cultura</span> y Turismo Blog
+          </h1>
+          <p>Todo lo que necesitas saber de esta hermosa ciudad</p>
+          <form>
+            <input type = "text" class = "search-input" placeholder="Search . . .">
+            <button type = "submit" class = "search-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+   <main>
+    
+     
+    
+      
+    <main>
+      <div class="contact-container">
+          <h2>Contacto</h2>
+          <form class="contact-form" action="#" method="POST">
+              <div class="form-group">
+                  <label for="name">Nombre:</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Mensaje:</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit">Enviar</button>
+          </form>
+      </div>
+     
+  </main>
        
     
         <!-- footer -->
@@ -110,8 +101,8 @@
         <!-- end of footer -->
         
         
-      </body>
-    </html>
+  
+    
   
 </body>
 </html>
