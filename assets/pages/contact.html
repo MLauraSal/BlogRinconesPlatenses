@@ -1,54 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aires Platenses</title>
+  <head>
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rincones Platenses-Cultura-turismo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;500;700;900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
-    <!--Fontawesone icons-->
-     <!-- Styles -->
-    <link rel="stylesheet" href="/styles.css">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    <!--Styles-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/contacto.css">
+
+    <!-- agregar la etiqueta del favicon para que les aparezca en la pestaña del navegador -->
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <title>Formulario de contacto</title>
 
 </head>
 <body>
     
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <!--Meta tags-->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Rincones Platenses-Cultura-turismo</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+   <main>
+    <div class="container- form">
+       <div class="info-form">
+           <h2>contactanos</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptatem cupiditate eaque corrupti, voluptatum reprehenderit ratione nostrum cumque magnam, animi minus adipisci vel omnis! Autem animi inventore esse officiis quaerat.</p>
+           <a href="#"> <i  class="fa  fa-phone">
+           </i>1124786753</a>
+           <a href="#">  <i  class=" fa fa-envelope">
+           </i>rinconesplatneses@tudominio,com</a>
+           <a  href="#"><i class="fa fa-map-marked">
+           </i> Ciudad, Pais</a>
+        </div>
+        <form  action="#"  autocomplete="off">
+        <input type="text"  name="nombre"
+         placeholder="Ingresa tu nombre"
+         class="campo">
+         <input  type="email"   name="email"
+         placeholder="Ingresa tu correo"
+         class="campo">
+         <textarea  name="mensaje"
+         placeholder="ingresa tu mensaje"></textarea>
+        <input  type="submit" name="enviar"
+        value="enviar mensaje"  class="btn-enviar">
+        </form>
     
-        <!--Google Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    
-        <!-- Font awesome icon -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    
-        <!--Styles-->
-        <link rel="stylesheet" href="/styles.css">
-      </head>
+      </div>
+     </main>
       <body>
     
         <!-- header -->
         <header>
           <nav class = "navbar">
             <div class = "container">
-              <a href = "index.html" class = "navbar-brand"><img src="/images/logo.png" alt=""></a>
+              <a href = "./index.html" class = "navbar-brand">
+                <!-- no olviden llenar la descripcion de la imagen en el atributo alt -->
+                <img src="/images/logo.png" alt="">
+              </a>
               <div class = "navbar-nav">
-                <a href = "">Home</a>
+                <!-- completen las rutas para que los enlaces funcionen -->
+                <a href = "./index.html">Home</a>
                 <a href = "">Turismo</a>
                 <a href = "">Cultura</a>
-                <a href = "">Contacto</a>
+                <a href = "./contact.html">Contacto</a>
               </div>
             </div>
           </nav>
@@ -74,6 +94,7 @@
         <!-- footer -->
         <footer>
           <div class = "social-links">
+             <!-- completen las rutas por lo menos que lleven a la página principal de cada red social y no olviden agregarle el atributo target="_blank" -->
             <a href = "#"><i class = "fab fa-facebook-f"></i></a>
             <a href = "#"><i class = "fab fa-twitter"></i></a>
             <a href = "#"><i class = "fab fa-instagram"></i></a>
