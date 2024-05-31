@@ -67,11 +67,72 @@
 
 
 .contact {
-    position: relative;
+    max-width: 900px;
+    margin: 200px auto 150px auto; /* Ajusta el margen superior según sea necesario */
+    padding: 40px;
+    height: auto;
+    background:var(--white); /* Usa el color de fondo definido en :root */
+    border-radius: 10px; /* Agrega bordes redondeados para suavizar la apariencia */
+    box-shadow: var(--box-shadow);
+}
+
+.container-form{
     width: 100%;
-    height: 100vh;
-    display: grid;
-    place-items: center;
+   display:  grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 50px;
+   
+}
+.container-form  h2{
+   margin-bottom: 15px;
+   font-size: 35px;
+
+}
+.container-form  p{
+   font-size:   17px;
+   line-height:  1.6;
+   margin-bottom:  30px;
+
+}
+.container-form  a {
+   font-size:  15px;
+   display:  inline-block;
+   text-decoration:  none;
+   width:  100%;
+   margin-bottom:  15px;
+   color: black;
+   font-weight: 500;
+}
+.container-form a i{
+   color: orange;
+   margin-right:  10px;
+}
+.container-form form  .campo, textarea{
+   width:  100%;
+   padding:  15px   10px;
+   font-size: 15px;
+   border: 1px solid #dbdbdb;
+   margin-bottom: 20px;
+   border-radius: 3px;
+   outline: 0px;
+}
+
+.container-form  .btn{
+   padding:  15px;
+   font-size:  16px;
+   border: none;
+   outline: 0px;
+   background: orange;
+   color: white;
+   border-radius: 3px;
+   cursor: pointer;
+   transition: all 300ms ease;
+}
+
+.container-form .btn:hover {
+    color: orange;
+    background-color: var(--white);
+    border: 1px solid orange;
 }
 
 @media screen and (max-width: 540px) {
@@ -117,7 +178,32 @@
         padding: 2rem;
     }
 
-    .
+    .contact {
+        max-width: 400px;
+        margin: 150px auto 150px auto;
+        
+    }
+
+    .contact .container-form {
+       
+       grid-template-columns: repeat(1,1fr);
+    }
+
+    .container-form .info-form {
+        width: 70%;
+    }
+
+    .container-form form  .campo, textarea{
+        width:  100%;
+        padding: 15px 10px;
+        
+        
+    }
+
+    .container-form form textarea{
+       width: 70%;
+     
+     }
 }
 
 @media screen and (min-width: 768px) {
