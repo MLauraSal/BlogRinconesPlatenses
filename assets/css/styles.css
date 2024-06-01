@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "/assets/css/home.css";
+@import "/assets/css/contact.css";
+@import "/assets/css/noticias.css";
+@import "/assets/css/turismo.css";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 :root{
     --Playfair: 'Playfair Display', serif;
@@ -10,6 +15,7 @@
     --white: #ffffff;
     --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.1);
 }
+
 *{
     padding: 0;
     margin: 0;
@@ -20,36 +26,50 @@ body{
     color: var(--dark);
     background: #eee ;
 }
+
 img{
     width: 100%;
     display: block;
 }
+
 .container{
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 1.2rem;
 }
-
-/* header */
-.home_header{
-    min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/images/ciudad-vista-aerea-noche-estadio-unico-1024x680.jpg) center/cover no-repeat fixed;
+/*-----------------------------------*\
+  #SECTION HEADER
+\*-----------------------------------*/
+.header {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--exDark);
     display: flex;
-    flex-direction: column;
-    justify-content: stretch;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3%;
+    box-shadow: var(--box-shadow);
 }
-.navbar{
-    background: transparent;
-    padding: 1.2rem;
-}
-.navbar-brand img{
-  border-radius: 50% ;
-}
-.navbar-nav{
-    padding: 0.8rem 0 0.2rem 0;
+
+
+
+.header .navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 2rem 9%;
     text-align: center;
+    margin-right: 2rem;
+
 }
-.navbar-nav a{
+
+
+.header .navbar-content a {
     text-transform: uppercase;
     font-family: var(--Roboto);
     letter-spacing: 1px;
@@ -57,213 +77,26 @@ img{
     color: #fff;
     text-decoration: none;
     display: inline-block;
-    padding: 0.4rem 0.1rem;
-    
+    padding: 0.4rem 1rem;
+    letter-spacing: 3px;
     transition: opacity 0.5s ease;
+
 }
-.navbar-nav a:hover{
+.header .navbar-content a:hover {
     opacity: 0.7;
 }
-.banner{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-}
-.banner-title{
-    font-size: 4rem;
-    font-family: var(--Playfair);
-    line-height: 1.2;
-    backdrop-filter: blur(1px);
-}
-.banner-title span{
-    font-family: var(--Playfair);
-    color: var(--exDark);
-}
-.banner p{
-    padding: 1rem 0 2rem 0;
-    font-size: 1.2rem;
-    text-transform: capitalize;
-    font-family: var(--Roboto);
-    font-weight: 300;
-    word-spacing: 2px;
-}
-.banner form{
-    background: #fff;
-    border-radius: 2rem;
-    padding: 0.6rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-.search-input{
-    font-family: var(--Roboto);
-    font-size: 1.1rem;
-    width: 100%;
-    outline: 0;
-    padding: 0.6rem 0;
-    border: none;
-    
-}
-.search-input::placeholder{
-    text-transform: capitalize;
-}
-.search-btn{
-    width: 40px;
-    font-size: 1.1rem;
-    color: var(--dark);
-    border: none;
-    background: transparent;
-    outline: 0;
-    cursor: pointer;
-}
-
-/* info */
-.info{
-    padding: 4.5rem 0;
-}
-.title{
-    text-align: center;
-    padding: 1rem 0;
-}
-.title h2{
-    font-family: var(--Playfair);
-    font-size: 2.4rem;
-}
-.title p{
-    text-transform: uppercase;
-    padding: 0.6rem 0;
-}
-.info-content{
-    margin: 2rem 0;
-}
-.info-item{
-    cursor: pointer;
-    margin: 1.5rem 0;
-}
-.info-img{
-    position: relative;
-    overflow: hidden;
-}
-.info-img::after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-}
-.info-img img{
-    transition:  all 0.5s ease;
-}
-.info-item:hover img{
-    transform: scale(1.2);
-}
-.info-img span:first-of-type{
-    position: absolute;
-    z-index: 1;
-    top: 10px;
-    left: 10px;
-    background: var(--exDark);
-    color: #fff;
-    padding: 0.25rem 1rem;
-}
-.info-img span:last-of-type{
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
-    right: 10px;
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.1rem;
-}
-.info-title{
-    padding: 1rem;
-    font-size: 1.2rem;
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-}
-.info-title a{
-    color: var(--dark);
-    text-decoration: none;
-    text-transform: capitalize;
-    font-family: var(--Playfair);
-}
-
-/* blog */
-.blog{
-    background: #f9f9f9;
-    padding: 4.5rem 0;
-}
-.blog-content{
-    margin: 2rem 0;
-}
-.blog-img{
-    position: relative;
-}
-.blog-img span{
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: var(--exDark);
-    color: #fff;
-    font-size: 1.4rem;
-    padding: 0.3rem 0.6rem;
-}
-.blog-text{
-    margin: 2.2rem 0;
-    padding: 0 1rem;
-}
-.blog-text span{
-    font-weight: 300;
+.header .navbar-brand {
     display: block;
-    padding-bottom: 0.5rem;
+    width: 150px;
+  
 }
-.blog-text h2{
-    font-family: var(--Playfair);
-    padding: 1rem 0;
-    font-size: 1.65rem;
-    font-weight: 500;
-}
-.blog-text p{
-    font-weight: 300;
-    font-size: 1.1rem;
-    opacity: 0.9;
-    padding-bottom: 1.2rem;
-}
-.blog-text a{
-    font-family: var(--Roboto);
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: var(--dark);
-    display: inline-block;
-    background: var(--dark);
-    color: #fff;
-    padding: 0.55rem 1.2rem;
-    transition: all 0.5s ease;
-}
-.blog-text a:hover{
-    background: var(--exDark);
+ .header .navbar-brand img {
+    border-radius: 50%;
 }
 
-/* about */
-.about{
-    padding: 4.5rem 0;
-}
-.about-text{
-    margin: 2rem 0;
-}
-.about-text > p{
-    font-size: 1.1rem;
-    padding: 0.6rem 0;
-    opacity: 0.8;
-}
-
-/* footer */
+/*-----------------------------------*\
+  #SECTION FOOTER
+\*-----------------------------------*/
 footer{
     background: var(--exDark);
     color: #fff;
@@ -299,63 +132,4 @@ footer{
     display: block;
     font-family: var(--Playfair);
     letter-spacing: 2px;
-}
-
-/* Media Queries */
-@media screen and (min-width: 540px){
-    .navbar-nav a{
-        padding-right: 1.2rem;
-        padding-left: 1.2rem;
-    }
-    .banner-title{
-        font-size: 5rem;
-    }
-    .banner form{
-        margin-top: 1.4rem;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-width: 768px){
-    .navbar .container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .search-input{
-        padding: 0.8rem 0;
-    }
-    .info-content{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-    .info-item{
-        margin: 0;
-    }
-    .blog-content{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-}
-
-@media screen and (min-width: 992px){
-    .blog-content{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .about-content{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 3rem;
-        align-items: center;
-    }
-}
-
-@media screen and (min-width: 1200px){
-    .info-content{
-        grid-template-columns: repeat(3, 1fr);
-    }
 }

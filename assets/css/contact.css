@@ -1,78 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-/* Estilos para el formulario de contacto */
-:root {
-    --Playfair: 'Playfair Display', serif;
-    --Quicksand: 'Quicksand', sans-serif;
-    --Roboto: 'Roboto', sans-serif;
-    --dark: #1c1b1d;
-    --exDark: #485843;
-
-    --white: #ffffff;
-
-    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.1);
-}
-
-
-/* header */
-.header {
-    position: fixed;
-    width: 100%;
-    height: 4rem;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
-    background-color: var(--exDark);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 3%;
-    box-shadow: var(--box-shadow);
-}
-
-.header .navbar {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 2rem 9%;
-    text-align: center;
-    margin-right: 2rem;
-
-}
-
-.header .navbar a {
-    text-transform: uppercase;
-    font-family: var(--Roboto);
-    letter-spacing: 1px;
-    font-weight: 500;
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0.4rem 1rem;
-    letter-spacing: 3px;
-    transition: opacity 0.5s ease;
-
-}
-
-.header .navbar-brand {
-    display: block;
-    width: 150px;
-}
-
-
-.header.navbar a:hover {
-    opacity: 0.7;
-}
-
-
+/*-----------------------------------*\
+  #SECTION CONTACT
+\*-----------------------------------*/
 .contact {
     max-width: 900px;
-    margin: 200px auto 150px auto; /* Ajusta el margen superior según sea necesario */
+    margin: 200px auto 150px auto; 
     padding: 40px;
     height: auto;
-    background:var(--white); /* Usa el color de fondo definido en :root */
-    border-radius: 10px; /* Agrega bordes redondeados para suavizar la apariencia */
+    background:var(--white); 
+    border-radius: 10px; 
     box-shadow: var(--box-shadow);
 }
 
@@ -135,51 +71,47 @@
     border: 1px solid orange;
 }
 
-@media screen and (max-width: 540px) {
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+@media screen and ((min-width: 375px) and (max-width: 539px)) {
 
-    .header .navbar {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 2rem;
-        margin-top: 2rem;
-        margin-right: 0;
+    .header .navbar-content a {
         font-size: 10px;
+     
     }
-
-    
-
-    .navbar a {
-        
-        padding-right: 1.2rem;
-        padding-left: 1.2rem;
-    }
-
-
-    
-
-    .heading {
-
-        font-size: 3rem;
-
-    }
-
-    .categories-container {
-
-        grid-template-columns: repeat(1, 1fr);
-
-    }
-
-    .site {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-        gap: 5rem;
-        margin-bottom: 30px;
-        padding: 2rem;
-    }
-
     .contact {
-        max-width: 400px;
+        max-width: 300px;
+        margin: 150px auto 150px auto;
+        
+    }
+
+    .contact .container-form {
+       
+       grid-template-columns: repeat(1,1fr);
+    }
+
+    .container-form .info-form {
+        width: 70%;
+    }
+
+    
+
+    .container-form form textarea{
+       width: 100%;
+     
+     }
+}
+@media screen and ((min-width: 540px) and (max-width: 768px)) {
+
+   
+
+    .header .navbar-content a {
+        font-size: 10px;
+     
+    }
+    .contact {
+        max-width: 500px;
         margin: 150px auto 150px auto;
         
     }
@@ -201,19 +133,24 @@
     }
 
     .container-form form textarea{
-       width: 70%;
+       width: 100%;
      
      }
 }
 
-@media screen and (min-width: 768px) {
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
+@media screen and ((min-width: 769px )and (max-width: 992px)) {
+    .header .navbar-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        padding: 0;
     }
 
+    .contact {
+        max-width: 700px;
+        margin: 150px auto 150px auto;
+        
+    }
 
 
 }

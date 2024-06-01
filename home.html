@@ -14,24 +14,37 @@
     <!-- Font awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
     <!--Styles-->
-    <link rel="stylesheet" href="/assets/css/styles.css">
+   
+    <link rel="stylesheet" href="/assets/css/home.css">
   </head>
   <body>
 
     <!-- header -->
     <header class="home_header">
-      <nav class = "navbar">
-        <div class = "container">
-          <a href = "index.html" class = "navbar-brand"><img src="/assets/images/logo.png" alt=""></a>
-          <div class = "navbar-nav">
-            <a href = "./home.html">Home</a>
-            <a href = "./assets/pages/turismo.html">Turismo</a>
-            <a href = "./assets/pages/noticias.html">Noticias</a>
-            <a href = "./assets/pages/contact.html">Contacto</a>
-          </div>
-        </div>
-      </nav>
+
+      <!-- navbar -->
+      <div class="navbar-container">
+        
+        <a href = "/home.html" class = "navbar-brand"><img src="/assets/images/home/logo.png" alt="logo"></a>
+        <nav class="navbar">
+
+            <div class="navbar-content">
+                <a href="/home.html">Home</a>
+                <a href="/assets/pages/turismo.html">Turismo</a>
+                <a href="/assets/pages/noticias.html">Noticias</a>
+                <a href="/assets/pages/cultura.html">Cultura</a>
+                <a href="/assets/pages/contact.html">Contacto</a>
+            </div>
+        </nav>
+      </div>
+        
+      
+
+      <!-- banner -->
       <div class = "banner">
         <div class = "container">
           <h1 class = "banner-title">
@@ -46,6 +59,7 @@
           </form>
         </div>
       </div>
+
     </header>
     <!-- end of header -->
     
@@ -61,19 +75,19 @@
           <!-- item -->
           <div class = "info-item">
             <div class = "info-img">
-              <img src = "/assets/images/this-is-day-exploring-city.jpg" alt = "gente mirando un mapa">
+              <img src = "/assets/images/home/this-is-day-exploring-city.jpg" alt = "gente mirando un mapa">
               <span><i class = "far fa-heart"></i> 22</span>
               <span>Turismo & Cultura</span>
             </div>
             <div class = "info-title">
-              <a href = "#">“Walking Tour”</a>
+              <a href = "/assets/pages/turismo.html">“Walking Tour”</a>
             </div>
           </div>
           <!-- end of item -->
           <!-- item -->
           <div class = "info-item">
             <div class = "info-img">
-              <img src = "/assets/images/full-shot-family-cycling-together.jpg" alt = "familia andando en bici">
+              <img src = "/assets/images/home/full-shot-family-cycling-together.jpg" alt = "familia andando en bici">
               <span><i class = "far fa-heart"></i> 22</span>
               <span>Turismo & Cultura</span>
             </div>
@@ -85,19 +99,19 @@
           <!-- item -->
           <div class = "info-item">
             <div class = "info-img">
-              <img src = "/assets/images\plaza_morenocatedral-1024x684.jpg" alt = "atedral moreno">
+              <img src = "/assets/images/home/plaza_morenocatedral-1024x684.jpg" alt = "atedral moreno">
               <span><i class = "far fa-heart"></i> 22</span>
               <span>Turismo & Cultura</span>
             </div>
             <div class = "info-title">
-              <a href = "#">Edificios Patrimoniales</a>
+              <a href = "/assets/pages/cultura.html">Edificios Patrimoniales</a>
             </div>
           </div>
           <!-- end of item -->
           <!-- item -->
           <div class = "info-item">
             <div class = "info-img">
-              <img src = "/assets/images/Feria.jpg" alt = "feria artesanal">
+              <img src = "/assets/images/home/Feria.jpg" alt = "feria artesanal">
               <span><i class = "far fa-heart"></i> 22</span>
               <span>Turismo & Cultura</span>
             </div>
@@ -109,7 +123,7 @@
           <!-- item -->
           <div class = "info-item">
             <div class = "info-img">
-              <img src ="/assets/images\Paseo del Bosque.JPG" alt = "Paseo del bosque">
+              <img src ="/assets/images/home/Paseo del Bosque.JPG" alt = "Paseo del bosque">
               <span><i class = "far fa-heart"></i> 22</span>
               <span>Turismo & Cultura</span>
             </div>
@@ -121,12 +135,12 @@
           <!-- item -->
           <div class = "info-item">
             <div class = "info-img">
-              <img src = "/assets/images/Teatro.jpg" alt = "Teatro">
+              <img src = "/assets/images/home/Teatro.jpg" alt = "Teatro">
               <span><i class = "far fa-heart"></i> 22</span>
               <span>Turismo & Cultura</span>
             </div>
             <div class = "info-title">
-              <a href = "#">Teatro Coliseo Podesta</a>
+              <a href = "/assets/pages/cultura.html">Teatro Coliseo Podesta</a>
             </div>
           </div>
           <!-- end of item -->
@@ -147,14 +161,14 @@
           <!-- item -->
           <div class = "blog-item">
             <div class = "blog-img">
-              <img src = "/assets/images/Estatua-San-Martin-3-1024x683.jpg" alt = "">
+              <img src = "/assets/images/home/Estatua-San-Martin-3-1024x683.jpg" alt = "">
               <span><i class = "far fa-heart"></i></span>
             </div>
             <div class = "blog-text">
               <span>12 de mayo, 2024</span>
               <h2>Lorem ipsum, dolor sit amet consectetur adipisicing</h2>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
-              <a href = "#">Read More</a>
+              <a href = "/assets/pages/cultura.html">Read More</a>
             </div>
           </div>
           <!-- end of item -->
@@ -166,28 +180,28 @@
           <!-- item -->
           <div class = "blog-item">
             <div class = "blog-img">
-              <img src = "/assets/images/Estatua-San-Martin-3-1024x683.jpg" alt = "">
+              <img src = "/assets/images/home/Estatua-San-Martin-3-1024x683.jpg" alt = "">
               <span><i class = "far fa-heart"></i></span>
             </div>
             <div class = "blog-text">
               <span>12 de mayo, 2024</span>
               <h2>Lorem ipsum, dolor sit amet consectetur adipisicing</h2>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
-              <a href = "#">Read More</a>
+              <a href = "/assets/pages/cultura.html">Read More</a>
             </div>
           </div>
           <!-- end of item -->
           <!-- item -->
           <div class = "blog-item">
             <div class = "blog-img">
-              <img src = "/assets/images/Estatua-San-Martin-3-1024x683.jpg" alt = "estatua san martin">
+              <img src = "/assets/images/home/Estatua-San-Martin-3-1024x683.jpg" alt = "estatua san martin">
               <span><i class = "far fa-heart"></i></span>
             </div>
             <div class = "blog-text">
               <span>12 de mayo, 2024</span>
               <h2>Lorem ipsum, dolor sit amet consectetur adipisicing</h2>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
-              <a href = "#">Read More</a>
+              <a href = "/assets/pages/cultura.html">Read More</a>
             </div>
           </div>
           <!-- end of item -->
@@ -201,7 +215,7 @@
       <div class = "container">
         <div class = "about-content">
           <div>
-            <img src = "/assets/images/plaza_morenocatedral-1024x684.jpg" alt = "catedral moreno">
+            <img src = "/assets/images/home/plaza_morenocatedral-1024x684.jpg" alt = "catedral moreno">
           </div>
           <div class = "about-text">
             <div class = "title">
@@ -218,12 +232,13 @@
 
     <!-- footer -->
     <footer>
-      <div class = "social-links">
-        <a href = "#"><i class = "fab fa-facebook-f"></i></a>
-        <a href = "#"><i class = "fab fa-twitter"></i></a>
-        <a href = "#"><i class = "fab fa-instagram"></i></a>
-        <a href = "#"><i class = "fab fa-pinterest"></i></a>
-      </div>
+      <div class="social-links">
+      
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://ar.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i></a>
+    </div>
       <span>Turismo & Cultura Blog</span>
        <!-- Copyright -->
 
