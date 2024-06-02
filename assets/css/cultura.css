@@ -24,7 +24,7 @@
 
 .content h1 {
     color: var(--white);
-    font-size: 7rem;
+    font-size: 5rem;
     font-family: var(--Playfair);
     line-height: 1.2;
     backdrop-filter: blur(1px);
@@ -56,8 +56,8 @@
 }
 .card {
     position: relative;
-    width: 500px;
-    height: 550px;
+    width: 400px;
+    height: 450px;
 }
 
 .card .face {
@@ -67,7 +67,7 @@
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    transition: 0.7s;
+    transition: 0.8s ease-in-out;
 }
 
 .card .front {

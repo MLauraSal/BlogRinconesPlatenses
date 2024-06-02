@@ -1,5 +1,5 @@
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Playfair&pause=1000&color=449CFD&random=false&width=435&lines=Turismo+%26+Cultura++Blog;Grupo++Code+Divas)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Playfair&size=40&pause=1000&color=449CFD&random=false&width=435&lines=Turismo+%26+Cultura++Blog;Grupo++Code+Divas)](https://git.io/typing-svg)
 
 ![alt text](<assets/images/Captura de pantalla (3).png>)
 ## Introduccion:
