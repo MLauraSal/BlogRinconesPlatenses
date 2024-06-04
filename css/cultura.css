@@ -9,7 +9,7 @@
     width: 100%;
     min-height: 650px;
     align-items: center;
-    background: url(/images/cultura/museo.jpg) no-repeat;
+    background: url(../images/cultura/museo.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     box-shadow: var(--box-shadow);
