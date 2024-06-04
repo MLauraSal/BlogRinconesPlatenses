@@ -1,8 +1,8 @@
-@import "/assets/css/home.css";
-@import "/assets/css/contact.css";
-@import "/assets/css/noticias.css";
-@import "/assets/css/turismo.css";
-@import "/assets/css/cultura.css";
+@import "/css/index.css";
+@import "/css/contact.css";
+@import "/css/noticias.css";
+@import "/css/turismo.css";
+@import "/css/cultura.css";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
