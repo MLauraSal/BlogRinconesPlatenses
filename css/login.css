@@ -1,0 +1,131 @@
+.home-login {
+    
+    width: 100%;
+    height: 100vh;
+    background: url(../images/home/atardecer-en-un-puente-en-la-plata-argentina.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+   
+}
+
+.home-login .content {
+    max-width: 600px;
+    color: var(--white);
+}
+
+.content h2 {
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+}
+
+.content p {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.home-login .wrapper-login {
+    position: relative;
+    width: 440px;
+}
+
+.wrapper-login h2 {
+    font-size: 3em;
+    color: var(--white);
+    text-align: center;
+}
+
+.wrapper-login .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 40px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid var(--white);
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: var(--white);
+    padding: 0 5px 0 45px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: var(--white);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    font-size: 1.2em;
+    color: var(--white);
+}
+
+
+
+.wrapper-login .remember-forgot {
+    font-size: .9em;
+    color: var(--white);
+    font-weight: 500;
+    margin: -25px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: #1e0b04;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper-login .btn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, #130702, #250e02);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--white);
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.wrapper-login .register-link {
+    font-size: .9em;
+    color: var(--white);
+    text-align: center;
+    margin: 30px 0;
+}
+
+.register-link p a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+}
+
