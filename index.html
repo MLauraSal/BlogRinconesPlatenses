@@ -23,43 +23,45 @@
   </head>
   <body>
 
-    <!-- header -->
-    <header class="home_header">
+   
+     <!---------- HEADER ---------->
+     <header class="header">
 
-      <!-- navbar -->
-      <div class="navbar-container">
-        
-        
-        <nav class="navbar">
-          <a href = "./index.html" class = "navbar-brand"><img src="./images/home/logo.png" alt="logo"></a>
-            <div class="navbar-content">
-                <a href="./index.html">Home</a>
-                <a href="./pages/turismo.html">Turismo</a>
-                <a href="./pages/noticias.html">Noticias</a>
-                <a href="./pages/cultura.html">Cultura</a>
-                <a href="./pages/contact.html">Contacto</a>
-                
-            </div>
-        </nav>
-      </div>
+      <a href = "./index.html" class = "navbar-brand"><img src="./images/home/logo.png" alt="logo"></a>
+
+
+      <!--NavBar-->
+
+      <nav class="navbar">
+
+        <a href="./index.html">Home</a>
+        <a href="./pages/turismo.html">Turismo</a>
+        <a href="./pages/noticias.html">Noticias</a>
+        <a href="./pages/cultura.html">Cultura</a>
+        <a href="./pages/contact.html">Contacto</a>
+
+      </nav>
       <!--Menu-->
       <div class="icons">
-        
-        <div id="login-btn"><i class="fas fa-user"></i></div>
-        <div id="menu-btn"><i class="fas fa-bars"></i></div>
+         
+          <div id="login-btn"><i class="fas fa-user"></i></div>
+          <div id="menu-btn"><i class="fas fa-bars"></i></div>
+
       </div>
-  
-    <!--Login-->
-    <form action="#" class="login-form">
-        <h3>Login</h3>
-        <input type="email" placeholder="Email registrado" class="box">
-        <input type="password" placeholder="Contraseña" class="box">
-        <p>¿No estas registrado/a?<a href="./pages/contact.html"> Crea tu cuenta </a></p>
-        <input type="submit" value="Login" class="btn">
+     
+      <!--Login-->
+      <form action="#" class="login-form">
+          <h3>Login</h3>
+          <input type="email" placeholder="Email registrado" class="box">
+          <input type="password" placeholder="Contraseña" class="box">
+          <p>¿No estas registrado/a?<a href="pages/contact.html"> Crea tu cuenta </a></p>
+          <input type="submit" value="Login" class="btn">
 
-    </form>
-      
+      </form>
+  </header>
 
+    <!-- end of header -->
+    
       <!-- banner -->
       <div class = "banner">
         <div class = "container">
@@ -76,9 +78,6 @@
         </div>
       </div>
 
-    </header>
-    <!-- end of header -->
-    
     <!-- design -->
     <section class = "info" id = "info">
       <div class = "container">
@@ -264,6 +263,6 @@
     </footer>
     <!-- end of footer -->
     
-    
+    <script src="./js/login.js"></script>
   </body>
 </html>
