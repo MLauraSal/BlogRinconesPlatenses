@@ -23,6 +23,7 @@
     font-family: var(--Quicksand);
 }
 body{
+    
     line-height: 1.4;
     color: var(--dark);
     background: #eee ;
@@ -38,6 +39,24 @@ img{
     margin: 0 auto;
     padding: 0 1.2rem;
 }
+
+.btn {
+    border: .2rem solid var(--green-color);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .3rem 3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: .5rem;
+    color: var(--exDark);
+
+}
+
+.btn:hover {
+    background-color: var(--exDark);
+    color: var(--white);
+}
+
 /*-----------------------------------*\
   #SECTION HEADER
 \*-----------------------------------*/
