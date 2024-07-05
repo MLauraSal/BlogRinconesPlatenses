@@ -1,72 +1,24 @@
 
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
-
-.home_header{
-    min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/home/ciudad-vista-aerea-noche-estadio-unico-1024x680.jpg) center/cover no-repeat fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 9%;
-}
-
-.home_header .navbar-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.home_header .navbar {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-}
-
-.home_header .navbar-content {
-    display: flex;
-    gap: 2rem;
-}
-
-.home_header .navbar-content a {
-    text-transform: uppercase;
-    font-family: var(--Roboto);
-    letter-spacing: 1px;
-    font-weight: 500;
-    color: #fff;
-    text-decoration: none;
-    padding: 0.4rem 1rem;
-    letter-spacing: 3px;
-    transition: opacity 0.5s ease;
-}
-.home_header .navbar-content a:hover {
-    opacity: 0.7;
-}
-
-.home_header .navbar-brand {
-    display: block;
-    width: 150px;
-}
-.home_header .navbar-brand img {
-    border-radius: 50%;
-}
 
 /*-----------------------------------*\
   #BANNER
 \*-----------------------------------*/
 
 .banner{
-    flex: 1;
+    min-height: 100vh;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
-    margin-top: auto;
+    background: url(../images/home/ciudad-vista-aerea-noche-estadio-unico-1024x680.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
 .banner-title{
+    margin-top: 5rem;
     font-size: 4rem;
     font-family: var(--Playfair);
     line-height: 1.2;

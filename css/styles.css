@@ -23,6 +23,7 @@
     font-family: var(--Quicksand);
 }
 body{
+    
     line-height: 1.4;
     color: var(--dark);
     background: #eee ;
@@ -35,65 +36,154 @@ img{
 
 .container{
     max-width: 1320px;
-    margin: 0 auto;
+    margin-top: 8rem;
     padding: 0 1.2rem;
 }
+
+.btn {
+    border: .2rem solid var(--green-color);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .3rem 3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: .5rem;
+    color: var(--exDark);
+
+}
+
+.btn:hover {
+    background-color: var(--exDark);
+    color: var(--white);
+}
+
 /*-----------------------------------*\
   #SECTION HEADER
 \*-----------------------------------*/
 .header {
-    position: fixed;
+    position: static;
     width: 100%;
-    height: 4rem;
+    height: 3rem;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1000;
-    background-color: var(--exDark);
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 3%;
-    box-shadow: var(--box-shadow);
+    padding: 2rem 2%;
+  
 }
 
 
 
 .header .navbar {
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 2rem 9%;
-    text-align: center;
-    margin-right: 2rem;
+   
 
 }
 
-
-.header .navbar-content a {
-    text-transform: uppercase;
-    font-family: var(--Roboto);
-    letter-spacing: 1px;
+.header .navbar a {
+    font-size: 1rem;
     font-weight: 500;
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0.4rem 1rem;
-    letter-spacing: 3px;
-    transition: opacity 0.5s ease;
+    color: var(--white);
+    margin: 0 2rem;
+    transition: all .5s ease-in;
 
 }
-.header .navbar-content a:hover {
-    opacity: 0.7;
+
+.header .navbar a:hover {
+    color: var(--green-color);
+    
+}
+
+.header .icons {
+    display: flex;
+
+}
+
+.header .icons div {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    color: var(--text-color);
+
+}
+
+.header .icons div:hover {
+    color: var(--green-color);
+    border: 0.1rem solid var(--green-color);
+
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header .navbar.active {
+    right: 2rem;
+    display: block;
 }
 .header .navbar-brand {
-    display: block;
-    width: 150px;
-  
+  width: 100px;
 }
  .header .navbar-brand img {
     border-radius: 50%;
 }
+
+.login-form {
+    border: 0px solid;
+    position: absolute;
+    width: 35rem;
+    top: 110%;
+    right: -110%;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.login-form.active {
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.login-form h3 {
+    font-size: 2.5rem;
+    text-transform: none;
+    color: var(--text-color);
+}
+
+.login-form .box {
+
+    border: 0.5px solid;
+    margin: 0.7rem 0;
+    background: #eee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-transform: none;
+}
+
+.login-form p {
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    color: var(--text-color);
+}
+
+.header .login-form p a {
+    color: var(--green-color);
+    text-decoration: underline;
+}
+
 
 /*-----------------------------------*\
   #SECTION FOOTER
