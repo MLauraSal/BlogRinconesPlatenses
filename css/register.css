@@ -1,23 +1,23 @@
 /*-----------------------------------*\
   #PAGE REGISTER
 \*-----------------------------------*/
-
+body{
+    background: url("../images/home/atardecer-en-un-puente-en-la-plata-argentina.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+   
+}
 .register {
-    max-width: 900px;
-    margin: 200px auto 150px auto; /* Ajusta el margen superior según sea necesario */
-    padding: 40px;
-    height: auto;
-    background:var(--white); /* Usa el color de fondo definido en :root */
-    border-radius: 10px; /* Agrega bordes redondeados para suavizar la apariencia */
-    box-shadow: var(--box-shadow); /* Agrega sombra para resaltar el formulario */
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+	margin-top: 8rem;
+    background: rgba(39, 39, 39, 0.4);
 }
 
-.register-container h2 {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 50px;
-    color: var(--exDark); /* Usa el color de texto definido en :root */
-}
+
 
 
 .formulario {
@@ -33,6 +33,7 @@
     font-size: 1.5rem;
 	padding: 10px;
 	cursor: pointer;
+	color: var(--white);
 }
 
 .formulario__grupo-input {
@@ -40,16 +41,17 @@
 }
 
 .formulario__input {
-	width: 90%;
-	background: #fff;
-	border: 3px solid var(--exDark);
-	border-radius: 5px;
-	height: 45px;
-	line-height: 45px;
-	padding: 0 40px 0 10px;
-	transition: .3s ease all;
+	font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    height: 50px;
+    width: 80%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    transition: .2s ease;
 }
-
 .formulario__input:focus {
 	border: 3px solid #454749;
 	outline: none;
@@ -143,6 +145,25 @@
 
 .formulario__mensaje-exito-activo {
 	display: block;
+}
+.top .link{
+    color: #fff;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.top .link a{
+    font-weight: 500;
+    color: #fff;
+    margin-left: 5px;
+	
+}
+.title{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
 }
 
 /*-----------------------------------*\

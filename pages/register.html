@@ -36,32 +36,43 @@
 
 <body>
    <!---------- HEADER ---------->
-   <header class="header">
+ <header class="header">
 
-    <a href = "/index.html" class = "navbar-brand"><img src="/images/home/logo.png" alt="logo"></a>
-
-
-    <!--NavBar-->
-
-    <nav class="navbar">
-
-      <div class="navbar-content">
-        <a href="../index.html">Home</a>
-        <a href="turismo.html">Turismo</a>
-        <a href="noticia.html">Noticias</a>
-        <a href="cultura.html">Cultura</a>
-        <a href="contact.html">Contacto</a>
-        <a href="login.html">Login</a>
-    </div>
-    </nav>
+    <nav class="nav">
+      <div class="nav-logo">
+          <p><img src="/images/home/logo.png" alt="logo"></p>
+      </div>
+      <div class="nav-menu" id="navMenu">
+          <ul>
+              <li><a href="../index.html" class="link active">Home</a></li>
+              <li><a href="turismo.html" class="link">Turismo</a></li>
+              <li><a href="noticias.html" class="link">Noticias</a></li>
+              <li><a href="cultura.html" class="link">Cultura</a></li>
+              <li><a href="contact.html" class="link">Contacto</a></li>
+          </ul>
+      </div>
+      <div class="nav-button">
+          <button class="btn white-btn"><a href="login.html">Sign In</a></button>
+         
+      </div>
+      <div class="nav-menu-btn">
+        <i class="fas fa-bars" onclick="myMenuFunction()"></i>
+      </div>
+  </nav>
+   
    
 </header>
+    <!-- end of header -->
+
   <main>
    
     <section class="register">
 
         <div class="register-container">
-            <h2>Registro</h2>
+            <div class="top">
+                <span class="link">Don't have an account? <a href="./login.html" >Sign in</a></span>
+                <header class="title">Sign up</header>
+            </div>
             <form action="" class="formulario" id="formulario">
                 <!-- Grupo: Usuario -->
                 <div class="formulario__grupo" id="grupo__usuario">
@@ -97,15 +108,7 @@
                     <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
                 </div>
 
-                <!-- Grupo: Contraseña 2 -->
-                <div class="formulario__grupo" id="grupo__password2">
-                    <label for="password2" class="formulario__label">Repetir Contraseña</label>
-                    <div class="formulario__grupo-input">
-                        <input type="password" class="formulario__input" name="password2" id="password2">
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                    <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
-                </div>
+               
 
                 <!-- Grupo: Correo Electronico -->
                 <div class="formulario__grupo" id="grupo__correo">
@@ -119,17 +122,7 @@
                         guiones y guion bajo.</p>
                 </div>
 
-                <!-- Grupo: Teléfono -->
-                <div class="formulario__grupo" id="grupo__telefono">
-                    <label for="telefono" class="formulario__label">Teléfono</label>
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input" name="telefono" id="telefono"
-                            placeholder="4491234567">
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                    <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14
-                        dígitos.</p>
-                </div>
+             
 
                 <!-- Grupo: Terminos y Condiciones -->
                 <div class="formulario__grupo" id="grupo__terminos">

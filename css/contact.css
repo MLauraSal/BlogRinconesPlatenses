@@ -76,10 +76,7 @@
 \*-----------------------------------*/
 @media screen and ((min-width: 375px) and (max-width: 539px)) {
 
-    .header .navbar-content a {
-        font-size: 10px;
-     
-    }
+  
     .contact {
         max-width: 300px;
         margin: 150px auto 150px auto;
@@ -106,10 +103,6 @@
 
    
 
-    .header .navbar-content a {
-        font-size: 10px;
-     
-    }
     .contact {
         max-width: 500px;
         margin: 150px auto 150px auto;
@@ -139,12 +132,7 @@
 }
 
 @media screen and ((min-width: 769px )and (max-width: 992px)) {
-    .header .navbar-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.5rem;
-        padding: 0;
-    }
+   
 
     .contact {
         max-width: 700px;
