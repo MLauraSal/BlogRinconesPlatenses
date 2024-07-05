@@ -70,7 +70,7 @@
 
         <div class="register-container">
            
-            <form action="" class="formulario" id="formulario">
+            <form action="" class="formulario" id="formulario" data-form>
                 <div class="top">
                     <span class="link">Don't have an account? <a href="login.html" >Sign in</a></span>
                     <header class="title">Sign up</header>
@@ -80,7 +80,7 @@
                     <label for="usuario" class="formulario__label">Usuario</label>
                     <div class="formulario__grupo-input">
                         <input type="text" class="formulario__input" name="usuario" id="usuario"
-                            placeholder="john123">
+                            placeholder="john123" data-user>
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
                     <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede
@@ -92,18 +92,33 @@
                     <label for="nombre" class="formulario__label">Nombre</label>
                     <div class="formulario__grupo-input">
                         <input type="text" class="formulario__input" name="nombre" id="nombre"
-                            placeholder="John Doe">
+                            placeholder="John Doe" data-name>
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
                     <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede
                         contener numeros, letras y guion bajo.</p>
                 </div>
 
+                
+                <!-- Grupo: Correo Electronico -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo"
+                            placeholder="correo@correo.com" data-email>
+                            
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos,
+                        guiones y guion bajo.</p>
+                </div>
+
+
                 <!-- Grupo: Contraseña -->
                 <div class="formulario__grupo" id="grupo__password">
                     <label for="password" class="formulario__label">Contraseña</label>
                     <div class="formulario__grupo-input">
-                        <input type="password" class="formulario__input" name="password" id="password">
+                        <input type="password" class="formulario__input" name="password" id="password" data-password>
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         
                     </div>
@@ -111,19 +126,6 @@
                 </div>
 
                
-
-                <!-- Grupo: Correo Electronico -->
-                <div class="formulario__grupo" id="grupo__correo">
-                    <label for="correo" class="formulario__label">Correo Electrónico</label>
-                    <div class="formulario__grupo-input">
-                        <input type="email" class="formulario__input" name="correo" id="correo"
-                            placeholder="correo@correo.com">
-                            
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos,
-                        guiones y guion bajo.</p>
-                </div>
 
              
 
@@ -141,7 +143,7 @@
                 </div>
 
                 <div class="formulario__grupo formulario__grupo-btn-enviar">
-                    <button type="submit" class="formulario__btn btn">Enviar</button>
+                    <button type="submit" class="formulario__btn btn" id="btnEnviar" value="addUser">Enviar</button>
                     <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado
                         exitosamente!</p>
                 </div>
@@ -174,7 +176,9 @@
 
 
 
-  <script src="../js/register.js"></script>
+  
+  <script src="../js/usuarios.js"></script>
+  <script src="../js/addUser.js"></script>
 </body>
 
 </html>
