@@ -52,7 +52,7 @@
           </ul>
       </div>
       <div class="nav-button">
-          <button class="btn white-btn"><a href="login.html">Sign In</a></button>
+          <button class="btn "><a href="login.html">Sign In</a></button>
          
       </div>
       <div class="nav-menu-btn">
@@ -69,11 +69,12 @@
     <section class="register">
 
         <div class="register-container">
-            <div class="top">
-                <span class="link">Don't have an account? <a href="./login.html" >Sign in</a></span>
-                <header class="title">Sign up</header>
-            </div>
+           
             <form action="" class="formulario" id="formulario">
+                <div class="top">
+                    <span class="link">Don't have an account? <a href="login.html" >Sign in</a></span>
+                    <header class="title">Sign up</header>
+                </div>
                 <!-- Grupo: Usuario -->
                 <div class="formulario__grupo" id="grupo__usuario">
                     <label for="usuario" class="formulario__label">Usuario</label>
@@ -104,6 +105,7 @@
                     <div class="formulario__grupo-input">
                         <input type="password" class="formulario__input" name="password" id="password">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        
                     </div>
                     <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
                 </div>
@@ -116,6 +118,7 @@
                     <div class="formulario__grupo-input">
                         <input type="email" class="formulario__input" name="correo" id="correo"
                             placeholder="correo@correo.com">
+                            
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
                     <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos,

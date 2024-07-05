@@ -72,9 +72,10 @@ img{
 }
 .nav-logo p img{
     border-radius: 50%;
-    width: 50%;
+    width: 45%;
     display: block;
     transition: transform 0.7s;
+    margin-top: 1rem;
 }
 .nav-menu ul{
     display: flex;
@@ -96,24 +97,26 @@ img{
     width: 130px;
     height: 40px;
     font-weight: 500;
-    background: rgba(255, 255, 255, 0.4);
-    border: none;
+    background: transparent;
+    
+    border: 1px solid var(--exDark);
     border-radius: 30px;
     cursor: pointer;
     transition: .3s ease;
+    
 }
+
 .btn:hover{
     background: rgba(255, 255, 255, 0.3);
+}
+.nav-button a {
+    text-decoration: none;
+    color: #fff;
 }
 #registerBtn{
     margin-left: 15px;
 }
-.btn.white-btn{
-    background: rgba(255, 255, 255, 0.7);
-}
-.btn.btn.white-btn:hover{
-    background: rgba(255, 255, 255, 0.5);
-}
+
 .nav-menu-btn{
     display: none;
 }

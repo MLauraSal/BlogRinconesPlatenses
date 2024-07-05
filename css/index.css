@@ -17,12 +17,13 @@
     background-position: center;
 }
 
-.banner-title{
-  
+.banner h1{
+    margin-top: 4rem;
     font-size: 4rem;
+    color: var(--white);
     font-family: var(--Playfair);
     line-height: 1.2;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(6px);
 }
 .banner-title span{
     font-family: var(--Playfair);
