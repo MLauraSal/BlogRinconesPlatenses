@@ -1,4 +1,4 @@
-const formulario = document.getElementById('formulario');
+const formulario = document.getElementById('#formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
@@ -105,6 +105,5 @@ formulario.addEventListener('submit', (e) => {
 	}
 });
 
-const userlist = [];
 
-function adduser()
+

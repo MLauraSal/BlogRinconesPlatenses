@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: var(--white);
     background: url(../images/home/ciudad-vista-aerea-noche-estadio-unico-1024x680.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -37,7 +37,7 @@
     word-spacing: 2px;
 }
 .banner form{
-    background: #fff;
+    background: var(--white);
     border-radius: 2rem;
     padding: 0.6rem 1rem;
     display: flex;
@@ -124,7 +124,7 @@
     top: 10px;
     left: 10px;
     background: var(--exDark);
-    color: #fff;
+    color: var(--white);
     padding: 0.25rem 1rem;
 }
 .info-img span:last-of-type{
@@ -132,7 +132,7 @@
     z-index: 1;
     bottom: 10px;
     right: 10px;
-    color: #fff;
+    color: var(--white);
     font-weight: 700;
     font-size: 1.1rem;
 }
@@ -178,7 +178,7 @@
     bottom: 10px;
     right: 10px;
     background: var(--exDark);
-    color: #fff;
+    color: var(--white);
     font-size: 1.4rem;
     padding: 0.3rem 0.6rem;
 }
@@ -210,7 +210,7 @@
     color: var(--dark);
     display: inline-block;
     background: var(--dark);
-    color: #fff;
+    color: var(--white);
     padding: 0.55rem 1.2rem;
     transition: all 0.5s ease;
 }
@@ -242,98 +242,4 @@
     opacity: 0.8;
 }
 
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-
-
-@media screen and ((min-width: 375px) and (max-width: 768px)){
-    .home_header {
-        padding: 1rem 2rem;
-    }
-
-    .home_header .navbar-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .home_header .navbar {
-        justify-content: center;
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    .home_header .navbar-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .home_header .navbar-content a {
-        padding: 0.4rem 0;
-    }
-
-    .home_header .navbar-brand {
-        width: 150px;
-        margin-bottom: 1rem;
-    }
-    .search-input{
-        padding: 0.8rem 0;
-    }
-    .info-content{
-      
-        grid-template-columns: repeat(1, 1fr);
-        
-    }
-    .info-item{
-        margin: 0;
-    }
-    .blog-content{
-        
-        grid-template-columns: repeat(1, 1fr);
-        
-    }
-
-    .about-content{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media screen and ((min-width: 769px )and (max-width: 992px)){
-    
-    .home_header {
-        padding: 1rem 2rem;
-    }
-
-    .home_header .navbar-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .home_header .navbar {
-        justify-content: center;
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    .home_header .navbar-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .home_header .navbar-content a {
-        padding: 0.4rem 0;
-    }
-
-    .home_header .navbar-brand {
-        width: 150px;
-        margin-bottom: 1rem;
-    }
-    .search-input{
-        padding: 0.8rem 0;
-    }
-}
 

@@ -5,35 +5,19 @@ const login = document.querySelectorById("#login");
 
 
 
-
-
-/*
- * FUNCTION LOGIN
-*/
-const loginForm = document.querySelector('.login-form');
-
-document.querySelector('#login-btn').onclick = () =>
-{
-    loginForm.classList.toggle('active');
-    navbar.classList.remove('active');
-    
-
+function login() {
+    login.style.left = "4px";
+    register.style.right = "-520px";
+    btnLogin.className += " white-btn";
+    btnRegister.className = "btn";
+    login.style.opacity = 1;
+    register.style.opacity = 0;
 }
-
-/* FUNCTION NAVBAR
-*/
-const navbar = document.querySelector('.navbar');
-
-document.querySelector('#menu-btn').onclick = () =>
-{
-    navbar.classList.toggle('active');
-    loginForm.classList.remove('active');
-    
-}
-
-
-window.onscroll = () => {
-    navbar.classList.remove('active');
-    loginForm.classList.remove('active');
-    
+function register() {
+    login.style.left = "-510px";
+    register.style.right = "5px";
+    btnLogin.className = "btn";
+    btnRegister.className += " white-btn";
+    login.style.opacity = 0;
+    register.style.opacity = 1;
 }
