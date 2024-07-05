@@ -27,37 +27,29 @@
      <!---------- HEADER ---------->
      <header class="header">
 
-      <a href = "./index.html" class = "navbar-brand"><img src="./images/home/logo.png" alt="logo"></a>
-
-
-      <!--NavBar-->
-
-      <nav class="navbar">
-
-        <a href="./index.html">Home</a>
-        <a href="./pages/turismo.html">Turismo</a>
-        <a href="./pages/noticias.html">Noticias</a>
-        <a href="./pages/cultura.html">Cultura</a>
-        <a href="./pages/contact.html">Contacto</a>
-
-      </nav>
-      <!--Menu-->
-      <div class="icons">
-         
-          <div id="login-btn"><i class="fas fa-user"></i></div>
-          <div id="menu-btn"><i class="fas fa-bars"></i></div>
-
-      </div>
+      <nav class="nav">
+        <div class="nav-logo">
+            <p><img src="/images/home/logo.png" alt="logo"></p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="../index.html" class="link active">Home</a></li>
+                <li><a href="./pages/turismo.html" class="link">Turismo</a></li>
+                <li><a href="./pages/noticias.html" class="link">Noticias</a></li>
+                <li><a href="./pages/cultura.html" class="link">Cultura</a></li>
+                <li><a href="./pages/contact.html" class="link">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn white-btn"><a href="./pages/login.html">Sign In</a></button>
+           
+        </div>
+        <div class="nav-menu-btn">
+          <i class="fas fa-bars" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
      
-      <!--Login-->
-      <form action="#" class="login-form">
-          <h3>Login</h3>
-          <input type="email" placeholder="Email registrado" class="box">
-          <input type="password" placeholder="Contraseña" class="box">
-          <p>¿No estas registrado/a?<a href="pages/contact.html"> Crea tu cuenta </a></p>
-          <input type="submit" value="Login" class="btn">
-
-      </form>
+     
   </header>
 
     <!-- end of header -->

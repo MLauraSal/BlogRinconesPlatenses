@@ -6,7 +6,7 @@
 
 .banner{
     min-height: 100vh;
-    
+    height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +18,7 @@
 }
 
 .banner-title{
-    margin-top: 5rem;
+  
     font-size: 4rem;
     font-family: var(--Playfair);
     line-height: 1.2;
@@ -71,7 +71,7 @@
 \*-----------------------------------*/
 
 .info{
-    padding: 4.5rem 0;
+    padding: 3rem 0;
 }
 
 .info-content{

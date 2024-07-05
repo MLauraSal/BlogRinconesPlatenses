@@ -1,3 +1,7 @@
+const btnLogin = document.querySelectorById("#loginBtn");
+const btnRegister = document.querySelectorById("#registerBtn");
+const register = document.querySelectorById("#register");
+const login = document.querySelectorById("#login");
 
 
 

@@ -36,154 +36,87 @@ img{
 
 .container{
     max-width: 1320px;
-    margin-top: 8rem;
+    margin-top: 2rem;
     padding: 0 1.2rem;
 }
 
-.btn {
-    border: .2rem solid var(--green-color);
-    margin-top: 1rem;
-    display: inline-block;
-    padding: .3rem 3rem;
-    font-size: 1rem;
-    font-weight: 500;
-    border-radius: .5rem;
-    color: var(--exDark);
-
-}
-
-.btn:hover {
-    background-color: var(--exDark);
-    color: var(--white);
-}
 
 /*-----------------------------------*\
   #SECTION HEADER
 \*-----------------------------------*/
 .header {
-    position: static;
-    width: 100%;
-    height: 3rem;
+    position: fixed;
     top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
-    background-color: transparent;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 2%;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
   
 }
 
 
 
-.header .navbar {
+.nav{
+    position: fixed;
+    top: 0;
     display: flex;
-   
-
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
 }
-
-.header .navbar a {
-    font-size: 1rem;
+.nav-logo p img{
+    border-radius: 50%;
+    width: 50%;
+    display: block;
+    transition: transform 0.7s;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
     font-weight: 500;
     color: var(--white);
-    margin: 0 2rem;
-    transition: all .5s ease-in;
-
+    padding-bottom: 15px;
+    margin: 0 25px;
 }
-
-.header .navbar a:hover {
-    color: var(--green-color);
-    
+.link:hover, .active{
+    border-bottom: 2px solid #fff;
 }
-
-.header .icons {
-    display: flex;
-
-}
-
-.header .icons div {
-    height: 4rem;
-    width: 4rem;
-    line-height: 4rem;
-    border-radius: 50%;
-    font-size: 2rem;
-    margin-left: 0.5rem;
-    text-align: center;
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
     cursor: pointer;
-    color: var(--text-color);
-
+    transition: .3s ease;
 }
-
-.header .icons div:hover {
-    color: var(--green-color);
-    border: 0.1rem solid var(--green-color);
-
+.btn:hover{
+    background: rgba(255, 255, 255, 0.3);
 }
-
-#menu-btn {
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white-btn{
+    background: rgba(255, 255, 255, 0.7);
+}
+.btn.btn.white-btn:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
+.nav-menu-btn{
     display: none;
 }
-
-.header .navbar.active {
-    right: 2rem;
-    display: block;
-}
-.header .navbar-brand {
-  width: 100px;
-}
- .header .navbar-brand img {
-    border-radius: 50%;
-}
-
-.login-form {
-    border: 0px solid;
-    position: absolute;
-    width: 35rem;
-    top: 110%;
-    right: -110%;
-    box-shadow: var(--box-shadow);
-    padding: 2rem;
-    border-radius: 0.5rem;
-    background: #fff;
-    text-align: center;
-}
-
-.login-form.active {
-    right: 2rem;
-    transition: 0.4s linear;
-}
-
-.login-form h3 {
-    font-size: 2.5rem;
-    text-transform: none;
-    color: var(--text-color);
-}
-
-.login-form .box {
-
-    border: 0.5px solid;
-    margin: 0.7rem 0;
-    background: #eee;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    text-transform: none;
-}
-
-.login-form p {
-    font-size: 1.4rem;
-    padding: 0.5rem 0;
-    color: var(--text-color);
-}
-
-.header .login-form p a {
-    color: var(--green-color);
-    text-decoration: underline;
-}
-
 
 /*-----------------------------------*\
   #SECTION FOOTER
