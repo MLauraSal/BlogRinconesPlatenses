@@ -32,12 +32,20 @@ body{
 img{
     width: 100%;
     display: block;
+    object-fit: cover;
 }
 
 .container{
     max-width: 1320px;
     margin-top: 2rem;
     padding: 0 1.2rem;
+}
+
+.profile-img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 3px solid var(--white);
 }
 
 
@@ -120,7 +128,18 @@ img{
 .nav-menu-btn{
     display: none;
 }
+.nav-profile {
+    cursor: pointer;
+    position: relative;
+}
 
+.nav-profile ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    
+}
 /*-----------------------------------*\
   #SECTION FOOTER
 \*-----------------------------------*/
