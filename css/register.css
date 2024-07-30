@@ -1,115 +1,87 @@
-/*-----------------------------------*\
-  #PAGE REGISTER
-\*-----------------------------------*/
 body{
     background: url("../images/home/atardecer-en-un-puente-en-la-plata-argentina.webp");
     background-size: cover;
     background-repeat: no-repeat;
-	
-    
-   
+    background-attachment: fixed;
+    overflow: hidden;
 }
-.register {
-	display: flex;
+.wrapper{
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 110vh;
-	margin-top: 6rem;
-	margin-bottom: 6rem;
+    
     background: rgba(39, 39, 39, 0.4);
-
 }
 
-
-
-
-
-.formulario__label {
-	display: block;
-	font-weight: 600;
-    font-size: 1.5rem;
-	padding: 10px;
-	cursor: pointer;
-	color: var(--white);
+.form-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+   
+    overflow: hidden;
+    z-index: 2;
+}
+.register-container{
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
 }
 
-.formulario__grupo-input {
-	position: relative;
+.top span{
+    color: #fff;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.top span a{
+    font-weight: 500;
+    color: #fff;
+    margin-left: 5px;
+}
+header{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 10px 0;
 }
 
-.formulario__input {
-	font-size: 15px;
+.input-field{
+    font-size: 15px;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     height: 50px;
-    width: 80%;
+    width: 90%;
     padding: 0 10px 0 45px;
     border: none;
     border-radius: 40px;
     outline: none;
     transition: .2s ease;
 }
-.formulario__input:focus {
-	border: 3px solid #454749;
+.input-field:hover, .input-field:focus{
+    border: 3px solid #454749;
 	outline: none;
 	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
-
-.formulario__input-error {
-	font-size: 12px;
-	margin-bottom: 0;
-	display: none;
+::-webkit-input-placeholder{
+    color: #fff;
 }
-
-.formulario__input-error-activo {
-	display: block;
+.input-box i{
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #fff;
 }
-
-.formulario__validacion-estado {
-	position: absolute;
-	right: 10px;
-	bottom: 15px;
-	z-index: 100;
-	font-size: 16px;
-	opacity: 0;
-}
-
-.formulario__checkbox {
-	margin-right: 10px;
-}
-
-.formulario__grupo-terminos, 
-.formulario__mensaje,
-.formulario__grupo-btn-enviar {
-	grid-column: span 2;
-}
-
-.formulario__mensaje {
-	height: 45px;
-	line-height: 45px;
-	background: #F66060;
-	padding: 0 15px;
-	border-radius: 3px;
-	display: none;
-}
-
-.formulario__mensaje-activo {
-	display: block;
-}
-
-.formulario__mensaje p {
-	margin: 0;
-}
-
-.formulario__grupo-btn-enviar {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.formulario__btn {
-	
-	font-size: 15px;
+.submit{
+    font-size: 15px;
     font-weight: 500;
     color: black;
     height: 45px;
@@ -120,85 +92,83 @@ body{
     background: rgba(255, 255, 255, 0.7);
     cursor: pointer;
     transition: .3s ease-in-out;
-	
-    
-   
-   
-    
-    
 }
-
-.formulario__btn:hover {
-	background: rgba(255, 255, 255, 0.5);
+.submit:hover{
+    background: rgba(255, 255, 255, 0.5);
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
-
-.formulario__mensaje-exito {
-	font-size: 14px;
-	color: #119200;
-	display: none;
+#profilePicture {
+    display: none;
 }
-
-.formulario__mensaje-exito-activo {
-	display: block;
-}
-.top .link{
+.file-label {
+    display: inline-block;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
     color: #fff;
-    font-size: small;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-}
-.top .link a{
-    font-weight: 500;
-    color: #fff;
-    margin-left: 5px;
-	
-}
-.title{
-    color: #fff;
-    font-size: 30px;
+    height: 50px;
+    width: 95%;
+    padding: 0 10px;
+    border: none;
+    border-radius: 40px;
     text-align: center;
-    padding: 10px 0 30px 0;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .2s ease;
+    margin-bottom: 2rem;
 }
-
-/*-----------------------------------*\
-  #ESTILOS VALIDACION
-\*-----------------------------------*/
-.formulario__grupo-correcto .formulario__validacion-estado {
-	color: #1ed12d;
-	opacity: 1;
+.file-label:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
-
-.formulario__grupo-incorrecto .formulario__label {
-	color: #bb2929;
+@media only screen and (max-width: 786px){
+    .nav-button{
+        display: none;
+    }
+    .nav-menu.responsive{
+        top: 100px;
+    }
+    .nav-menu{
+        position: absolute;
+        top: -800px;
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.2);
+        width: 100%;
+        height: 90vh;
+        backdrop-filter: blur(20px);
+        transition: .3s;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu-btn{
+        display: block;
+    }
+    .nav-menu-btn i{
+        font-size: 25px;
+        color: #fff;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .nav-menu-btn i:hover{
+        background: rgba(255, 255, 255, 0.15);
+    }
 }
-
-.formulario__grupo-incorrecto .formulario__validacion-estado {
-	color: #bb2929;
-	opacity: 1;
-}
-
-.formulario__grupo-incorrecto .formulario__input {
-	border: 3px solid #bb2929;
-}
-
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-@media screen and (max-width: 991px) {
-	.formulario {
-		grid-template-columns: 1fr;
-	}
-
-	.formulario__grupo-terminos, 
-	.formulario__mensaje,
-	.formulario__grupo-btn-enviar {
-		grid-column: 1;
-	}
-
-	.formulario__btn {
-		width: 100%;
-	}
+@media only screen and (max-width: 540px) {
+    .wrapper{
+        min-height: 100vh;
+    }
+    .form-box{
+        width: 100%;
+        height: 800px;
+    }
+    .register-container{
+        width: 100%;
+        padding: 0 20px;
+    }
+   
 }

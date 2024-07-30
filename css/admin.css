@@ -1,45 +1,215 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-:root{
-    --Playfair: 'Playfair Display', serif;
-    --Quicksand: 'Quicksand', sans-serif;
-    --Roboto: 'Roboto', sans-serif;
-    --dark: #111011;
-    --exDark: #485843;
-    --white: #ffffff;
-    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.1);
-}
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: var(--Quicksand);
-}
-body{
-    
-    line-height: 1.4;
-    color: var(--dark);
-    background: #eee ;
-}
 
-img{
-    width: 100%;
-    display: block;
-    object-fit: cover;
-}
 
-.container{
-    max-width: 1320px;
-    margin-top: 2rem;
-    padding: 0 1.2rem;
-}
 
-.nav-logo p img{
+
+.profile-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    width: 5%;
+    margin-right: 10px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
-    transition: transform 0.7s;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  .nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: transparent;
+    
+    border: 1px solid var(--exDark);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+    
+}
+
+.btn:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+.nav-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*-----------------------------------*\
+  #BANNER
+\*-----------------------------------*/
+
+.banner{
+    min-height: 100vh;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    background: url(../images/home/ciudad-vista-aerea-noche-estadio-unico-1024x680.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h1{
+    margin-top: 4rem;
+    font-size: 4rem;
+    color: var(--white);
+    font-family: var(--Playfair);
+    line-height: 1.2;
+    backdrop-filter: blur(6px);
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form{
+    background: var(--white);
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+/*-----------------------------------*\
+  #SECTION FOOTER
+\*-----------------------------------*/
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
     margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 88%;
+    }
+    /*========= NAV=========*/
+
+    nav button {
+        display: inline-block;
+        font-size: 1.5rem;
+        background: transparent;
+        color: var(--white);
+        cursor: pointer;
+    }
+     
+    nav button #close_nav-btn {
+        display: none;
+    }
+
+    .nav-container {
+        position: relative;
+    }
+    
+    .nav-link {
+        position: relative;
+    }
 }

@@ -1,21 +1,17 @@
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
-
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const errorMsg = document.getElementById('errorMsg');
-
-    const adminEmail = 'admin@example.com';
-    const adminPassword = 'admin123';
-
-    if (email === adminEmail && password === adminPassword) {
-        errorMsg.textContent = '';
-        alert('Inicio de sesión exitoso!');
-        // Redirige a la página de administración
-        window.location.href = 'pages/adminPanel.html';
-    } else {
-        errorMsg.textContent = 'Email o contraseña incorrectos';
-    }
-
     
+    const username = document.getElementById('user').value;
+    const password = document.getElementById('password').value;
+    
+    const storedUser = JSON.parse(localStorage.getItem('user'));
+    
+    if (storedUser && storedUser.username === username && storedUser.password === password) {
+        localStorage.setItem('loggedInUser', JSON.stringify(storedUser));
+        alert('Inicio de sesión exitoso');
+        window.location.href = '../index.html';
+    } else {
+        alert('Nombre de usuario o contraseña incorrectos');
+    }
 });
+

@@ -2,183 +2,127 @@
 <html lang="en">
 
 <head>
-  <!--Meta tags-->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Rincones Platenses-Cultura-turismo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Formulario de contacto</title>
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rincones Platenses-Cultura-turismo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario de contacto</title>
 
-  <!--Google Fonts-->
+    <!--Google Fonts-->
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
-    rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
 
-  <!-- Font awesome icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous" />
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 
-  <!--Styles-->
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/register.css">
-  
- 
+    <!--Styles-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/register.css">
 
-  
-  
+
+
+
+
 
 </head>
 
 <body>
-   <!---------- HEADER ---------->
- <header class="header">
-
-    <nav class="nav">
-      <div class="nav-logo">
-          <p><img src="../images/home/logo.png" alt="logo"></p>
-      </div>
-      <div class="nav-menu" id="navMenu">
-          <ul>
-              <li><a href="../index.html" class="link active">Home</a></li>
-              <li><a href="turismo.html" class="link">Turismo</a></li>
-              <li><a href="noticias.html" class="link">Noticias</a></li>
-              <li><a href="cultura.html" class="link">Cultura</a></li>
-              <li><a href="contact.html" class="link">Contacto</a></li>
-          </ul>
-      </div>
-      <div class="nav-button">
-          <button class="btn "><a href="login.html">Sign In</a></button>
-         
-      </div>
-      <div class="nav-menu-btn">
-        <i class="fas fa-bars" onclick="myMenuFunction()"></i>
-      </div>
-  </nav>
-   
-   
-</header>
-    <!-- end of header -->
-
-  <main>
-   
-    <section class="register">
-
-        <div class="register-container">
-           
-            <form action="" class="formulario" id="formulario" data-form>
-                <div class="top">
-                    <span class="link">Don't have an account? <a href="login.html" >Sign in</a></span>
-                    <header class="title">Sign up</header>
-                </div>
-                <!-- Grupo: Usuario -->
-                <div class="formulario__grupo" id="grupo__usuario">
-                    <label for="usuario" class="formulario__label">Usuario</label>
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input" name="usuario" id="usuario"
-                            placeholder="john123" data-user>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede
-                        contener numeros, letras y guion bajo.</p>
-                </div>
-
-                <!-- Grupo: Nombre -->
-                <div class="formulario__grupo" id="grupo__nombre">
-                    <label for="nombre" class="formulario__label">Nombre</label>
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input" name="nombre" id="nombre"
-                            placeholder="John Doe" data-name>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede
-                        contener numeros, letras y guion bajo.</p>
-                </div>
-
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p><img src="../images/home/logo.png" alt="logo"></p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="../index.html" class="link active">Home</a></li>
+                    <li><a href="turismo.html" class="link">Turismo</a></li>
+                    <li><a href="noticias.html" class="link">Noticias</a></li>
+                    <li><a href="cultura.html" class="link">Cultura</a></li>
+                    <li><a href="contact.html" class="link">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
                 
-                <!-- Grupo: Correo Electronico -->
-                <div class="formulario__grupo" id="grupo__correo">
-                    <label for="correo" class="formulario__label">Correo Electrónico</label>
-                    <div class="formulario__grupo-input">
-                        <input type="email" class="formulario__input" name="correo" id="correo"
-                            placeholder="correo@correo.com" data-email>
-                            
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos,
-                        guiones y guion bajo.</p>
+                <button class="btn"><a href="register.html">Sign in</a></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="fas fa-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <!----------------------------- Form box ----------------------------------->
+        <div class="form-box">
+            <form class="register-container" id="registerForm">
+                <div class="top">
+                    <span>You have an account? <a href="login.html">Sign in</a></span>
+                    <header>Register</header>
                 </div>
-
-
-                <!-- Grupo: Contraseña -->
-                <div class="formulario__grupo" id="grupo__password">
-                    <label for="password" class="formulario__label">Contraseña</label>
-                    <div class="formulario__grupo-input">
-                        <input type="password" class="formulario__input" name="password" id="password" data-password>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                        
-                    </div>
-                    <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Username" id="user" required>
+                    <i class="fas fa-user"></i>
                 </div>
-
+                <div class="input-box">
+                    <input type="email" class="input-field" placeholder="Email" id="email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password" id="password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="input-box">
+                    <label for="profilePicture" class="file-label">Foto de Perfil</label>
+                    <input type="file" id="profilePicture" accept="image/*"  required>
+                   
+                </div>
+                
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Register">
+                </div>
                
-
-             
-
-                <!-- Grupo: Terminos y Condiciones -->
-                <div class="formulario__grupo" id="grupo__terminos">
-                    <label class="formulario__label">
-                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-                        Acepto los Terminos y Condiciones
-                    </label>
-                </div>
-
-                <div class="formulario__mensaje" id="formulario__mensaje">
-                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
-                        correctamente. </p>
-                </div>
-
-                <div class="formulario__grupo formulario__grupo-btn-enviar">
-                    <button type="submit" class="formulario__btn btn" id="btnEnviar" value="addUser">Enviar</button>
-                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado
-                        exitosamente!</p>
-                </div>
             </form>
         </div>
-
-    </section>
-  </main>
-
-
-  <!-- footer -->
-  <footer>
-    <div class="social-links">
-      
-      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://ar.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i></a>
+        
     </div>
-    <span>Turismo & Cultura Blog</span>
 
-    <!-- Copyright -->
 
-    <div class="copyright">
-      &copy; 2024 <span>Code Divas</span> - Todos los Derechos Reservados.
-    </div>
-  </footer>
-  <!-- end of footer -->
+</main>
+             
+            
 
 
 
+    <!-- footer -->
+    <footer>
+        <div class="social-links">
 
-  
-  <script src="../js/usuarios.js"></script>
-  <script src="../js/addUser.js"></script>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://ar.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <span>Turismo & Cultura Blog</span>
+
+        <!-- Copyright -->
+
+        <div class="copyright">
+            &copy; 2024 <span>Code Divas</span> - Todos los Derechos Reservados.
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+
+
+
+    <script src="../js/register.js"></script>
+
 </body>
 
 </html>
